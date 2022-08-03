@@ -122,13 +122,15 @@ fieldset.right-fieldset {
 	border-radius: 10px;
 }
 
-.form-container {
-	display: flex;
-	gap: 20px;
-	align-items: flex-start;
-}
+@media (min-width: 576px) {
+	.form-container {
+		display: flex;
+		gap: 20px;
+		align-items: flex-start;
+	}
 
-.button-container {
-	display: flex;
-	gap: 20px;
+	.button-container {
+		display: flex;
+		gap: 20px;
+	}
 }
