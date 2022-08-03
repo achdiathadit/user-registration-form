@@ -4,9 +4,9 @@ import { regisSchema } from '../schema';
 import 'react-datepicker/dist/react-datepicker.css';
 
 const onSubmit = async (values, actions) => {
-	console.log(values);
-	console.log(actions);
 	await new Promise((resolve) => setTimeout(resolve, 1000));
+	alert('Data was successfully submitted!');
+	alert(JSON.stringify(values, null, 2));
 	actions.resetForm();
 };
 
@@ -35,8 +35,6 @@ const RegisForm = () => {
 		validationSchema: regisSchema,
 		onSubmit,
 	});
-	console.log(errors);
-	console.log(touched);
 	return (
 		<div className='card'>
 			<form onSubmit={handleSubmit} autoComplete='off'>
