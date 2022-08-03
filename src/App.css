@@ -30,7 +30,7 @@ header h3 {
 
 form {
 	width: 95%;
-	max-width: 400px;
+	max-width: 600px;
 	margin: 0 auto;
 }
 
@@ -102,15 +102,11 @@ select.react-datepicker__month-select {
 
 fieldset.left-fieldset {
 	border: none;
+	flex-grow: 2;
 }
 
 fieldset.right-fieldset {
 	border: none;
-	flex-shrink: 5;
-}
-
-.file-upload-button::before {
-	border-radius: 10px;
 }
 
 .card {
