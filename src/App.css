@@ -17,19 +17,15 @@
 	margin-top: 1rem;
 }
 
-nav {
+header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 2rem;
 }
-nav h3 {
+header h3 {
 	margin: 1rem;
-	cursor: pointer;
 	color: #718096;
-}
-nav h3:hover {
-	color: white;
 }
 
 form {
@@ -76,14 +72,45 @@ input[type='checkbox'] {
 
 button {
 	display: block;
-	margin: 1rem 0;
-	padding: 0.35rem 0.5rem;
+	margin: 2rem 0;
+	padding: 0.65rem 0.5rem;
 	background-color: #4299e1;
 	color: #1a202c;
 	border: none;
-	border-radius: 3px;
+	border-radius: 10px;
 	width: 100%;
 	font-size: 1rem;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+input.input-error,
+select.input-error {
+	border-color: #fc8181;
+}
+
+button:disabled {
+	opacity: 0.35;
+}
+
+select.react-datepicker__year-select,
+select.react-datepicker__month-select {
+	width: 90%;
+	padding: 0.2rem 0.5rem;
+	font-size: 0.8rem;
+	color: white;
+	border: 1px solid #4a5568;
+	background-color: #2d3748;
+	border-radius: 5px;
+	outline: none;
+	margin: 0.35rem;
+}
+
+.card {
+	background: #1a202c;
+	width: 50%;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
 }
