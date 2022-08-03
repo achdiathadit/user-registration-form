@@ -17,5 +17,5 @@ export const regisSchema = yup.object().shape({
 		.string()
 		.email('Please enter a valid email')
 		.required('This data is required'),
-	uploadedImages: yup.string(),
+	uploadedImages: yup.string().required('This data is required'),
 });

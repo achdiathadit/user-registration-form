@@ -25,7 +25,7 @@ const RegisForm = () => {
 			name: '',
 			title: '',
 			marriageStatus: '',
-			dateOfBirth: new Date(),
+			dateOfBirth: '',
 			placeOfBirth: '',
 			address: '',
 			phoneNumber: '',
@@ -66,9 +66,10 @@ const RegisForm = () => {
 							showMonthDropdown
 							showYearDropdown
 							dropdownMode='select'
+							placeholderText={'Choose a date'}
 						/>
-						{errors.placeOfBirth && touched.placeOfBirth && (
-							<p className='error'>{errors.placeOfBirth}</p>
+						{errors.dateOfBirth && touched.dateOfBirth && (
+							<p className='error'>{errors.dateOfBirth}</p>
 						)}
 						<label htmlFor='placeOfBirth'>Place of Birth</label>
 						<input
@@ -135,6 +136,9 @@ const RegisForm = () => {
 							<option value='mr'>Mr.</option>
 							<option value='mrs'>Ms.</option>
 						</select>
+						{errors.title && touched.title && (
+							<p className='error'>{errors.title}</p>
+						)}
 						<label htmlFor='marriageStatus'>Marriage Status</label>
 						<select
 							value={values.marriageStatus}
