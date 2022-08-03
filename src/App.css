@@ -64,12 +64,6 @@ select::placeholder {
 	color: #a0aec0;
 }
 
-input[type='checkbox'] {
-	width: fit-content;
-	margin-right: 0.5rem;
-	transform: scale(1.25);
-}
-
 button {
 	display: block;
 	margin: 2rem 0;
@@ -106,11 +100,35 @@ select.react-datepicker__month-select {
 	margin: 0.35rem;
 }
 
+fieldset.left-fieldset {
+	border: none;
+}
+
+fieldset.right-fieldset {
+	border: none;
+	flex-shrink: 5;
+}
+
+.file-upload-button::before {
+	border-radius: 10px;
+}
+
 .card {
 	background: #1a202c;
-	width: 50%;
+	width: 70%;
 	padding: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 10px;
+}
+
+.form-container {
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+}
+
+.button-container {
+	display: flex;
+	gap: 20px;
 }
